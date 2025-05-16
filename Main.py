@@ -153,8 +153,7 @@ def send_goodnight_message():
         "Отдыхайте, а завтра продолжим."
     )
     ai_text = generate_message(prompt)
-    text = f"🌙 Спокойной ночи:
-{ai_text}"
+    text = f"🌙 Спокойной ночи: {ai_text}"
     bot.send_message(CHAT_ID, text)
     log_event('goodnight', text)
 
